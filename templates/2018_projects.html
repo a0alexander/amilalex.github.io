@@ -85,11 +85,10 @@
                 It works by spinning a meshed drum via a motor to 'sift' raw soil with debris to obtain filtered soil which can readily be used to compost plants.
               </p>
               <ul>
-                <li><a  href="https://github.com/salvillalon45/salvadorvillalon">GitHub Repository</a></li>
-                <li> | </li>
-                <li><a  href="http://salvador-villalon.appspot.com/">Site</a></li>
+               
+                <li><a  href="../static/2018/compost/IMP PROJECT.pdf">Project Report PDF</a></li>
               </ul>
-              <p><strong>Technologies Used:</strong> HTML, CSS, Bootstrap, Git, Flask, Google App Engine</p>
+              <p><strong>Technologies Used:</strong> Gas/Arc Welding, Lathe Operation and other workshop activities </p>
             </div>
           </div>
 
@@ -118,7 +117,7 @@
               </div>
               
               <div class="w3-display-container mySlides">
-                <img src="../static/2018/compost/filtered.jpg" style="width:100%; height: 80%;">
+                <img src="../static/2018/compost/filtered.jpg" style="width:auto;height: 300px; ">
                 <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
                   Filtered Soil
                 </div>
@@ -153,12 +152,7 @@
               <!-- <p class="project-title"><em>Basic Hydraulic Gripper Arm</em></p> -->
               <p> Project Sketches </p>
               <p>Sketching and CAD were completed via simple online tools prior to learing SOLIDWORKS</p>
-              <ul>
-                <li><a  href="https://github.com/salvillalon45/salvadorvillalon">GitHub Repository</a></li>
-                <li> | </li>
-                <li><a  href="http://salvador-villalon.appspot.com/">Site</a></li>
-              </ul>
-              <p><strong>Technologies Used:</strong> HTML, CSS, Bootstrap, Git, Flask, Google App Engine</p>
+            
             </div>
           </div>
 
@@ -204,14 +198,30 @@
 <hr>
 
         </div>
-        <div class=" text-center" style="margin-top: 5rem;">
-          <h1 class="text-center" style="margin:2rem 0">Video Demo</h1>
+        <h1 class="text-center" style="margin:2rem 0">Video Demo</h1>
 
-          <video width="30%" height="auto" autoplay loop> 
+        <div class=" text-center" style="margin-top: 5rem; display: flex; justify-content: space-around; align-items: center;">
+
+          <video width="40%" height="auto" autoplay loop> 
             <source src="../static/2018/compost/soil_video.mp4" type="video/mp4">
             
           </video>
+
+          <div style="width: 40%;">
+            <p style="text-align: justify;">The process shown in the video involves shoveling raw soil into the 
+              rotating meshed drum. The soil is filtered by the rotating motor powered 
+              mechanism and 'sifts' the desirable soil from the bottom. Unwated debris is 
+              ejected from the far end of the device. 
+              <br>
+              <br>
+              Most of the components of the device were manufactured in the workshop, including the 
+              frame, meshed drum, motor driving mechanism and base structure. Box bars were cut and 
+              welded together to form the outer rigid structure of the device
+            </p>
+          </div>
         </div>
+
+      
 
         
 
@@ -242,6 +252,16 @@
 var slideId = ["mySlides", "mySlides2"]
 showSlides(1, 0);
 showSlides(1, 1);
+
+setInterval(() => {
+  plusSlides(1, 0);
+
+  setTimeout(() => {
+  plusSlides(1, 1);
+    
+  }, 1000);
+
+}, 3000);
 
 function plusSlides(n, no) {
   showSlides(slideIndex[no] += n, no);
