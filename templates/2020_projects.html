@@ -8,7 +8,7 @@
       .mySlides {display:none;}
       </style>
 
-    <link rel="icon" href= "../static/images/salvador logo/favicon.ico">
+    
     <link rel="stylesheet" type="text/css" href="../static/css/reset.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css">
@@ -70,7 +70,7 @@
         -->
         <div class="github-btn">
           <h3>Find more projects on my GitHub Page!</h3>
-          <a class="btn btn-primary"  href="https://github.com/salvillalon45" role="button">Find more on GitHub</a>
+          <a class="btn btn-primary"  href="https://github.com/a0alexander" role="button">Find more on GitHub</a>
         </div>
 
         <!-- ********************************** -->
@@ -92,7 +92,7 @@
                 <li> | </li>
                 <li><a  href="../static/2020/weather station/PWS Project - Progress Report.pdf">Project Report</a></li>
               </ul>
-              <p><strong>Technologies Used:</strong> HTML, CSS, Bootstrap, Git, Flask, Google App Engine</p>
+              <p><strong>Technologies Used:</strong> Arduino, GSM Module Interfacing, GPS, Mini LCD programming </p>
             </div>
           </div>
 
@@ -254,6 +254,18 @@
 var slideId = ["mySlides", "mySlides2"]
 showSlides(1, 0);
 showSlides(1, 1);
+
+setInterval(() => {
+  
+  plusSlides(1,0)
+  setTimeout(() => {
+  plusSlides(1,1)
+    
+  }, 1000);
+
+}, 2400);
+
+
 
 function plusSlides(n, no) {
   showSlides(slideIndex[no] += n, no);
